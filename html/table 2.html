@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin: 15px auto;
+      }
+      th,
+      td {
+        border: 1px solid red;
+      }
+
+      thead {
+        background-color: pink;
+      }
+      tbody {
+        background-color: aliceblue;
+      }
+      tfoot {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Mango</td>
+          <td>150</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>550</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
