@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: pink;
+      }
+      nav {
+        background-color: aquamarine;
+      }
+      main {
+        background-color: bisque;
+        overflow: hidden;
+      }
+      footer {
+        background-color: orange;
+      }
+      .content {
+        width: 70%;
+        background-color: blue;
+        float: left;
+      }
+
+      section {
+        background-color: purple;
+        height: 100px;
+      }
+
+      article {
+        background-color: brown;
+        height: 100px;
+      }
+      aside {
+        width: 30%;
+        background-color: lightgreen;
+        float: left;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>
+      <div class="content">
+        <section>Section</section>
+        <article>Article</article>
+      </div>
+      <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>
