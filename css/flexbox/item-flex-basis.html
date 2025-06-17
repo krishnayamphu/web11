@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        border: 1px solid red;
+        margin: 15px;
+        display: flex;
+      }
+      .col {
+        background-color: orange;
+        padding: 5px;
+      }
+      .col:nth-child(even) {
+        background-color: purple;
+      }
+      .col:last-child {
+        background-color: aqua;
+      }
+      .fb-100 {
+        flex-basis: 100px;
+      }
+      .fb-200 {
+        flex-basis: 200px;
+      }
+      .fb-300 {
+        flex-basis: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col fb-100">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col fb-200">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col fb-300">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col fb-100">2</div>
+      <div class="col fb-200">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col fb-200">1</div>
+      <div class="col">2</div>
+    </div>
+  </body>
+</html>
