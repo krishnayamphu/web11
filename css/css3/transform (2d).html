@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        float: left;
+        margin: 15px;
+        transition: all 1s;
+      }
+      div:hover {
+        background-color: teal;
+      }
+      .box1:hover {
+        transform: translate(50px, 0px);
+      }
+      .box2:hover {
+        transform: scale(2, 2);
+      }
+      .box3:hover {
+        transform: rotate(360deg);
+      }
+      .box4:hover {
+        transform: skew(0deg, 15deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">translate</div>
+    <div class="box2">scale</div>
+    <div class="box3">rotate</div>
+    <div class="box4">skew</div>
+  </body>
+</html>

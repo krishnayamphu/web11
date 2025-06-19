@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      section {
+        border: 1px solid red;
+        margin: 15px;
+        padding: 15px 5px;
+        display: flex;
+        perspective: 500px;
+      }
+      @keyframes changeColor {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+          border-radius: 50%;
+        }
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid orange;
+        margin: 15px;
+        animation-name: changeColor;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+      }
+
+      @keyframes moveBox {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(340%) rotateY(360deg);
+        }
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: greenyellow;
+        animation: moveBox 2s ease-in-out infinite alternate;
+      }
+      @keyframes textAnimation {
+        0% {
+          color: red;
+        }
+        50% {
+          color: blue;
+        }
+        100% {
+          color: green;
+          font-size: 80px;
+          text-shadow: 0 0 15px black;
+        }
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        text-align: center;
+        animation: textAnimation 2s ease-in-out infinite alternate both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <section>
+      <div class="box2">translateX</div>
+    </section>
+
+    <h1>ANIMATION</h1>
+  </body>
+</html>
