@@ -1,0 +1,15 @@
+/* .hero-banner */
+.hero-banner {
+  background-image: linear-gradient(to right, #efeffd, #fbecfe);
+}
+
+.client-students img {
+  width: 60px;
+}
+.client-students img:nth-child(2) {
+  left: 40px;
+}
+
+.client-students img:last-child {
+  left: 80px;
+}
