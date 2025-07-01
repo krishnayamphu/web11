@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <input type="text" id="txtbox" oninput="setData()" />
+    <span id="lblcount"></span>
+    <script>
+      function setData() {
+        let data = document.getElementById("txtbox").value;
+        document.getElementById("txtbox").value = data.toUpperCase();
+        document.getElementById("lblcount").innerHTML = data.length;
+      }
+    </script>
+  </body>
+</html>
