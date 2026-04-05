@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* 
+      list-style-type: disc|circle|square|upper-alphp|lower-alpha|upper-roman|lower-roman|decimal;
+        list-style-position: outside|inside;
+        list-style-image: url();
+        list-style:type position image;
+         */
+
+      ul {
+        list-style-type: lower-roman;
+        list-style-position: inside;
+      }
+      .list-1 {
+        list-style: square;
+      }
+
+      .list-2 {
+        list-style: url(star.png);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul>
+
+    <ul class="list-1">
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul>
+
+    <ul class="list-2">
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul>
+  </body>
+</html>
