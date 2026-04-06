@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+      }
+      div {
+        width: 200px;
+        height: 150px;
+        border: 1px solid red;
+        padding: 10px;
+        margin: 20px;
+        line-height: 1.5;
+        float: left;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      img {
+        width: 300px;
+      }
+      .box1 {
+        overflow: hidden;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+      perferendis recusandae consequuntur eligendi quas eveniet, ad sequi autem
+      beatae quis voluptas, atque magni itaque. Cumque necessitatibus libero
+      dolor numquam quos.
+    </div>
+
+    <div class="hidden">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+      perferendis recusandae consequuntur eligendi quas eveniet, ad sequi autem
+      beatae quis voluptas, atque magni itaque. Cumque necessitatibus libero
+      dolor numquam quos.
+    </div>
+
+    <div class="scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+      perferendis recusandae consequuntur eligendi quas eveniet, ad sequi autem
+      beatae quis voluptas, atque magni itaque. Cumque necessitatibus libero
+      dolor numquam quos.
+    </div>
+
+    <div class="box1">
+      <img src="../html/ai.PNG" alt="" />
+    </div>
+  </body>
+</html>
