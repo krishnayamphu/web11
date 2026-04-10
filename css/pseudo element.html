@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+    <style>
+      /*
+          CSS:
+          element::pseudo-element {
+            property: value;
+          }
+        pseudo-element:
+        ::first-letter,::first-line,::selection,::before,::after,::placeholder,::marker
+
+        content: "text" | url("path/to/image") | counter(name) | attr(attribute) | open-quote | close-quote | no-open-quote | no-close-quote
+        */
+
+      h1::first-letter {
+        color: red;
+      }
+      p::first-line {
+        color: blue;
+      }
+
+      ::selection {
+        background-color: blue;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo
+      illum voluptatibus commodi. Ea sit reiciendis recusandae vitae vel
+      voluptates consequuntur natus deserunt aliquam numquam tempore dolor,
+      accusantium repellendus minima.
+    </p>
+  </body>
+</html>

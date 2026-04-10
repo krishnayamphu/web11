@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .dropdown {
+        background-color: teal;
+        display: inline-block;
+        margin: 30px;
+        position: relative;
+      }
+      .dropdown span {
+        display: block;
+        padding: 5px 10px;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        background-color: orange;
+        display: none;
+        width: 150px;
+      }
+      .dropdown-menu a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+      .dropdown-menu a:hover {
+        background-color: blue;
+        color: orange;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>Dropdown</span>
+      <div class="dropdown-menu">
+        <a href="#">Option</a>
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 123</a>
+      </div>
+    </div>
+
+    <h1>Hello, World!</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga autem ipsa
+      mollitia, reprehenderit, vero voluptatibus error eum repellendus, esse
+      pariatur nostrum harum possimus modi! Voluptatibus deserunt alias culpa
+      aperiam at?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+    <style>
+      /*
+                CSS:
+                element::pseudo-element {
+                  property: value;
+                }
+              pseudo-element:
+              ::first-letter,::first-line,::selection,::before,::after,::placeholder,::marker
+
+              content: "text" | url("path/to/image") | counter(name) | attr(attribute) | open-quote | close-quote | no-open-quote | no-close-quote
+              */
+
+      h1::before {
+        content: "😀";
+      }
+      h1::after {
+        content: "😆";
+        font-size: 60px;
+      }
+      p::before {
+        content: open-quote;
+      }
+      p::after {
+        content: "🙏";
+      }
+      .box {
+        background-color: pink;
+        padding: 15px 10px;
+        position: relative;
+      }
+      .box:hover::after {
+        width: 100%;
+        height: 10px;
+        background-color: red;
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo
+      illum voluptatibus commodi. Ea sit reiciendis recusandae vitae vel
+      voluptates consequuntur natus deserunt aliquam numquam tempore dolor,
+      accusantium repellendus minima.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+      repellendus cupiditate soluta, corporis itaque nemo? Optio tempora at
+      minima perferendis reprehenderit quam dolores consequuntur qui fuga,
+      eaque, nulla ducimus dolore!
+    </p>
+
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident
+        nihil quaerat quod numquam doloribus veniam eveniet distinctio! Quis
+        velit esse, vero deleniti maiores qui dolorum earum illo. Quasi,
+        doloribus!
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque
+      ipsum neque, tempore nam obcaecati. Tempora commodi aperiam saepe nisi
+      perferendis sequi accusantium. Voluptatum blanditiis labore porro? Animi,
+      ipsum quos.
+    </p>
+  </body>
+</html>
