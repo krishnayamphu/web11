@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html</title>
+    <style>
+      input,
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    form:
+    <form action="url" method="get|post">...</form>
+    Form elements:
+    1. Label: <label for="id">...</label>
+    2. Input: <input type="text|password|email|number|search|checkbox|radio|color|range|date|time|datetime-local|month|week|submit|reset|file|hidden" name="name" id="id" value="value" />
+    3. Textarea: <textarea name="name" id="id" cols="30" rows="10"></textarea>
+    4. Select: <select name="name" id="id"><option value="value">...</option></select>
+    5. Button: <button type="button|submit|reset">...</button>
+
+    Elements attribute:
+    1. required 2. disabled 3. readonly 4. placeholder 5. value 6. name 7. id 8. type 9. maxlength 10. minlength 11. pattern 12. autocomplete 13. autofocus 14. multiple 15. size 16. step 17. min 18. max 19. checked 20. selected
+
+    -->
+
+    <form action="#">
+      <label for="user">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="user"
+        placeholder="enter username"
+        required
+      />
+
+      <label for="pass">Password:</label>
+      <input type="password" placeholder="enter password" id="pass" />
+
+      <input type="email" name="email" placeholder="enter email" />
+      <input type="number" name="age" placeholder="age" min="0" max="120" />
+      <input type="search" placeholder="search" />
+      <label>Checkbox</label>
+      <input type="checkbox" name="subscribe" id="subscribe" checked />
+      Subscribe <input type="checkbox" name="notify" id="notify" /> Notify me
+
+      <label>Gender</label>
+      <input type="radio" name="gender" value="m" />Male
+      <input type="radio" name="gender" value="f" />Female
+
+      <label for="color">Range</label>
+      <input type="range" name="volume" min="0" max="100" value="25" />
+      <input type="color" />
+
+      <input type="date" />
+      <input type="time" />
+      <input type="datetime-local" />
+      <input type="month" />
+      <input type="week" />
+      <input type="file" multiple />
+
+      <input type="hidden" value="token-123" name="token" />
+
+      <label for="textarea">Textarea</label>
+      <textarea name="message" id="textarea" cols="30" rows="5"></textarea>
+
+      <label for="select">Select</label>
+      <select name="" id="">
+        <option value="option1">Option 1</option>
+        <option value="option2" selected>Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <input type="button" value="button" />
+    </form>
+  </body>
+</html>
