@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css object-fit
+      object-fit: fill | contain | cover | none | scale-down;
+      object-position: left | right | top | bottom | center;
+      */
+      img {
+        width: 300px;
+        height: 250px;
+        border: 2px solid red;
+      }
+      .fill {
+        object-fit: fill;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .scale {
+        object-fit: scale-down;
+      }
+      .top {
+        object-position: top;
+      }
+      .bottom {
+        object-position: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../1.webp" alt="" />
+    <img class="fill" src="../1.webp" alt="" />
+    <img class="contain" src="../1.webp" alt="" />
+    <img class="cover" src="../1.webp" alt="" />
+    <img class="scale" src="../1.webp" alt="" />
+    <img class="contain top" src="../1.webp" alt="" />
+    <img class="contain bottom" src="../1.webp" alt="" />
+  </body>
+</html>
