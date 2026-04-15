@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css box-shadow
+        box-shadow: x-offset y-offset blur-radius spread-radius color;
+        box-shadow: inset x-offset y-offset blur-radius spread-radius color;
+      */
+      section {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin: 20px;
+      }
+      .box1 {
+        box-shadow: 5px 5px 2px rgb(0, 0, 0);
+      }
+      .box2 {
+        box-shadow: inset 0 0 2px rgb(0, 0, 0);
+        background-color: white;
+      }
+      .box3 {
+        background-color: white;
+        box-shadow:
+          5px 5px 2px rgb(0, 0, 0),
+          -5px -5px 2px green;
+      }
+    </style>
+  </head>
+  <body>
+    <section></section>
+    <section class="box1"></section>
+    <section class="box2"></section>
+    <section class="box3"></section>
+  </body>
+</html>
