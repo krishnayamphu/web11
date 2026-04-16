@@ -1,0 +1,106 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+header {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 15px 0;
+}
+header h2 {
+  color: rgb(3, 26, 118);
+  font-size: 2rem;
+}
+header p {
+  color: #7e7e7e;
+}
+
+nav {
+  background-color: rgb(3, 26, 118);
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px 16px;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: rgb(3, 26, 118);
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+main h1 {
+  margin-bottom: 15px;
+}
+
+main img {
+  width: 100%;
+}
+
+.contact-title {
+  text-transform: uppercase;
+}
+.contact-form {
+  padding: 1.5rem 0;
+}
+.contact-form input {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.contact-form input:focus-visible {
+  outline: none;
+  border: 1px solid rgb(3, 26, 118);
+}
+.contact-form textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.contact-form textarea:focus-visible {
+  outline: none;
+  border: 1px solid rgb(3, 26, 118);
+}
+.contact-form button {
+  padding: 5px 2rem;
+  border: 1px solid rgb(3, 26, 118);
+  color: rgb(3, 26, 118);
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.contact-form button:hover {
+  background-color: rgb(3, 26, 118);
+  color: white;
+}
+
+footer {
+  background-color: #000000;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+}
