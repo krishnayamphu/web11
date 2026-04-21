@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css radial-gradient() 
+      background-image: radial-gradient(shape size at position, color-stop1, color-stop2, ...);
+      radial-gradient(shape size at position,  color-stop1, color-stop2, ...);
+      radial-gradient(shape size at position, color-stop1 %, color-stop2 %, ...);
+      rradial-gradient(shape size at position, color-stop1 , color-stop2 %, ...);
+      */
+      div {
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 15px;
+        float: left;
+      }
+
+      .box1 {
+        background-image: radial-gradient(red, blue);
+      }
+
+      .box2 {
+        background-image: radial-gradient(circle, red, blue);
+      }
+
+      .box3 {
+        background-image: radial-gradient(
+          circle closest-side at 50% 10%,
+          red,
+          blue
+        );
+      }
+
+      .box4 {
+        background-image: radial-gradient(
+          circle closest-side,
+          red,
+          blue,
+          yellow,
+          green
+        );
+      }
+      .box5 {
+        background-image: radial-gradient(
+          rgba(255, 0, 0, 0.5),
+          rgba(0, 0, 255, 1)
+        );
+      }
+      .box6 {
+        background-image: radial-gradient(
+          circle,
+          red 33%,
+          blue 33%,
+          blue 66%,
+          green 66%
+        );
+      }
+      .box7 {
+        background-image: repeating-radial-gradient(circle, red, blue 25%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+  </body>
+</html>

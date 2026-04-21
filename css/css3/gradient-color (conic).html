@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css conic-gradient() 
+      background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+      conic-gradient([from angle] [at position,] color [degree],  color-stop1, color-stop2, ...);
+      conic-gradient([from angle] [at position,] color [degree], color-stop1 %, color-stop2 %, ...);
+      repeating-conic-gradient([from angle] [at position,] color [degree], color-stop1 , color-stop2 %, ...);
+      */
+      div {
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 15px;
+        float: left;
+      }
+
+      .box1 {
+        background-image: conic-gradient(red, blue);
+      }
+
+      .box2 {
+        background-image: conic-gradient(from 45deg, red, blue);
+      }
+
+      .box3 {
+        background-image: conic-gradient(from 270deg at 50% 70%, red, blue);
+      }
+
+      .box4 {
+        background-image: conic-gradient(
+          from 0deg,
+          red,
+          blue,
+          yellow,
+          green,
+          red
+        );
+      }
+      .box5 {
+        background-image: conic-gradient(
+          rgba(255, 0, 0, 0.5),
+          rgba(0, 0, 255, 1)
+        );
+      }
+      .box6 {
+        background-image: conic-gradient(
+          red 90deg,
+          blue 90deg,
+          blue 180deg,
+          green 180deg,
+          green 270deg,
+          yellow 270deg
+        );
+      }
+      .box7 {
+        background-image: repeating-conic-gradient(
+          from 0deg,
+          red,
+          blue,
+          yellow 5%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+  </body>
+</html>
