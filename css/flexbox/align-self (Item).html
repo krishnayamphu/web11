@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        height: 150px;
+        width: 200px;
+        float: left;
+        display: flex;
+        border: 1px solid black;
+        margin: 15px;
+        align-items: flex-start;
+      }
+      .col {
+        background-color: pink;
+        padding: 5px 10px;
+      }
+      .col:nth-child(even) {
+        background-color: lightseagreen;
+      }
+      .col:last-child {
+        padding-top: 30px;
+      }
+      .stretch {
+        align-self: stretch;
+      }
+
+      .flex-start {
+        align-self: flex-start;
+      }
+      .center {
+        align-self: center;
+      }
+      .flex-end {
+        align-self: flex-end;
+      }
+      .base-line {
+        align-self: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">
+        Third <br />
+        Item
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col stretch">2</div>
+      <div class="col center">
+        Third <br />
+        Item
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col flex-end">
+        Third <br />
+        Item
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col base-line">2</div>
+      <div class="col base-line">
+        Third <br />
+        Item
+      </div>
+    </div>
+  </body>
+</html>
