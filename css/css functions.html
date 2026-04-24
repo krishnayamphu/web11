@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css function
+        min(value1,value2)
+        max(value1,value2)
+        calc(value1 - value2) //+,-,*,/
+        
+        */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .box1 {
+        width: min(100%, 800px);
+        background-color: pink;
+        padding: 30px;
+        margin: 15px auto;
+      }
+
+      .box2 {
+        width: max(100%, 400px);
+        background-color: pink;
+        padding: 30px;
+        margin: 15px auto;
+      }
+      .box3 {
+        width: calc(100% - 200px);
+        background-color: pink;
+        padding: 30px;
+        margin: 15px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo
+        illum voluptatibus commodi. Ea sit reiciendis recusandae vitae vel
+        voluptates consequuntur natus deserunt aliquam numquam tempore dolor,
+        accusantium repellendus minima. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Laboriosam nemo illum voluptatibus commodi.
+      </p>
+    </div>
+
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem quia
+      blanditiis itaque sint fugiat debitis harum nihil nostrum quasi, nesciunt
+      exercitationem eum, vero similique consequuntur aliquam ad soluta tempora?
+    </div>
+
+    <div class="box3">box3</div>
+  </body>
+</html>
