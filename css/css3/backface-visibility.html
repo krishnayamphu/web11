@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css background-size
+      transform:translateX(x),translateY(y),translateZ(z),translate3d(x, y, z) |
+                scaleX(x),scaleY(y),scaleZ(z),scale3d(x, y, z) |
+                rotateX(angle),rotateY(angle),rotateZ(angle),rotate3d(x, y, z, angle);
+
+      perspective:perspective(length);
+      backface-visibility:visible|hidden;
+       */
+      section {
+        border: 2px solid black;
+        margin: 15px;
+        perspective: 1000px;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 2px solid black;
+        margin: 15px;
+        display: inline-block;
+        transition: all 1s ease;
+      }
+
+      .box1:hover {
+        transform: rotateY(180deg);
+        backface-visibility: visible;
+      }
+      .box2:hover {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">box</div>
+      <div class="box2">box</div>
+    </section>
+  </body>
+</html>
