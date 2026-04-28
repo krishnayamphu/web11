@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      /* css animation
+         animation-name:name;
+         animation-duration:time;
+         animation-timing-function:ease,ease-in,ease-out,linear,...
+         animation-delay:time;
+         animation-iteration-count:number|infinite;
+         animation-direction:normal|reverse|alternate|alternate-reverse;
+
+         @keyframes rules
+         @keyframes name{
+            keyframe-selector{ css properties; }
+         }
+
+         keyframe-selector: from,to,0%-100%
+       */
+
+      @keyframes changeBg {
+        from {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+
+      @keyframes animateBox {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(0%) rotate(360deg);
+        }
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 2px solid black;
+        margin: 15px;
+
+        animation-name: changeBg;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 0;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 15px;
+        animation: animateBox 2s linear infinite;
+      }
+
+      @keyframes biggerText {
+        from {
+          font-size: 20px;
+          color: yellow;
+        }
+        to {
+          font-size: 60px;
+          color: blue;
+        }
+      }
+
+      h1 {
+        background-color: brown;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        animation: biggerText 1s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <h1>Hello World</h1>
+  </body>
+</html>
