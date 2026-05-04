@@ -1,0 +1,21 @@
+:root {
+  --bs-primary: #629d23;
+  --bs-primary-rgb: rgb(98, 157, 35);
+
+  --bs-secondary-color: #2c3c28;
+  --bs-secondary-color-rgb: rgb(44, 60, 40);
+
+  --bs-btn-bg: #629d23;
+}
+
+.btn-primary {
+  background-color: #629d23 !important;
+  border: #629d23;
+}
+header {
+  background-color: var(--bs-secondary-color);
+}
+
+.site-top-bar {
+  border-color: rgba(255, 255, 255, 0.111) !important;
+}
