@@ -1,9 +1,9 @@
 :root {
   --bs-primary: #629d23;
-  --bs-primary-rgb: rgb(98, 157, 35);
+  --bs-primary-rgb: 98, 157, 35;
 
-  --bs-secondary-color: #2c3c28;
-  --bs-secondary-color-rgb: rgb(44, 60, 40);
+  --bs-secondary: #2c3c28;
+  --bs-secondary-rgb: 44, 60, 40;
 
   --bs-btn-bg: #629d23;
 }
@@ -13,9 +13,53 @@
   border: #629d23;
 }
 header {
-  background-color: var(--bs-secondary-color);
+  background-color: var(--bs-secondary);
 }
 
 .site-top-bar {
   border-color: rgba(255, 255, 255, 0.111) !important;
+}
+
+.bg-primary {
+  background-color: rgba(var(--bs-primary-rgb), 1) !important;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+.hero-banner {
+  background-image: url(../images/02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.badge-position {
+  top: 14px !important;
+  left: 50px;
+}
+
+.btn-category-action {
+  padding: 0.8rem 1.5rem;
+  border: none !important;
+}
+.btn-category-action:hover {
+  background-color: var(--bs-secondary) !important;
+  color: white !important;
+  border: none !important;
+}
+.btn-category-action:hover i {
+  color: white !important;
+}
+
+.btn-action {
+  padding: 0.8rem 1.5rem;
+}
+.btn-action:hover {
+  background-color: var(--bs-secondary) !important;
+  color: white !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-action:hover i {
+  color: white !important;
 }

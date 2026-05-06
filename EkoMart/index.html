@@ -40,18 +40,18 @@
           <div>
             <a href="#"><img src="images/logo-02.svg" alt="eko-mart" /></a>
           </div>
-          <div class="d-flex align-items-center gap-2 bg-white rounded">
+          <div class="d-flex align-items-center gap-2 bg-white rounded-3">
             <div class="input-group">
               <button
-                class="btn btn-outline-secondary dropdown-toggle py-3 px-2"
+                class="btn btn-category-action btn-outline-secondary dropdown-toggle text-secondary py-3 px-2"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fa-solid fa-bars-staggered"></i>
+                <i class="fa-solid fa-bars-staggered text-secondary"></i>
                 Cagegories
               </button>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu category-dropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
@@ -75,19 +75,136 @@
             </button>
           </div>
           <div>
-            <a class="btn btn-light bg-white" href="#">
-              <i class="fa-solid fa-user"></i> Account
+            <a
+              class="btn btn-light btn-action bg-white text-secondary"
+              href="#"
+            >
+              <i class="fa-solid fa-user text-secondary me-2"></i> Account
             </a>
-            <a class="btn btn-light bg-white" href="#">
-              <i class="fa-solid fa-user"></i> Account
+            <a
+              class="btn btn-light bg-white btn-action text-secondary position-relative"
+              href="#"
+            >
+              <i class="fa-solid fa-heart text-secondary me-2"></i>
+              <span
+                class="position-absolute translate-middle badge badge-position rounded-pill bg-primary"
+              >
+                2
+              </span>
+              Wishlist
             </a>
-            <a class="btn btn-light bg-white" href="#">
-              <i class="fa-solid fa-user"></i> Account
+            <a
+              class="btn btn-light bg-white btn-action text-secondary position-relative"
+              href="#"
+            >
+              <i class="fa-solid fa-shopping-cart text-secondary me-2"></i>
+              <span
+                class="position-absolute translate-middle badge badge-position rounded-pill bg-primary"
+              >
+                2
+              </span>
+              My Cart
             </a>
           </div>
         </div>
       </div>
     </header>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-semibold"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="#">Vendors</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fw-semibold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold">Contact</a>
+            </li>
+          </ul>
+          <div class="text-white">
+            <i class="fa-solid fa-location-dot"></i>
+            <span
+              >Delivery:
+              <small class="text-sm">258 FKD Street, Berlin</small></span
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-banner container my-5 rounded">
+        <div class="row">
+          <div class="col-6 py-5 px-5 ms-5 my-5">
+            <p class="text-primary">
+              Get up to 30% off on your first $150 purchase
+            </p>
+            <h1 class="text-secondary fw-bold">
+              Feed Your Family at the Best Price
+            </h1>
+            <p>
+              We have prepared special discounts for you on grocery products.
+              Don't miss these opportunities...
+            </p>
+            <div class="d-flex align-items-center gap-4">
+              <a class="btn btn-primary" href="#"
+                >Shop Now <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span>from</span>
+              <h2 class="text-primary fw-bold">$80.99</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
