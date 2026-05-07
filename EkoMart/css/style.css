@@ -63,3 +63,13 @@ header {
 .btn-action:hover i {
   color: white !important;
 }
+
+@media (max-width: 991.98px) {
+  #primary-nav {
+    background-color: white !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+  #primary-nav .navbar-toggler .navbar-toggler-icon {
+    color: var(--bs-secondary) !important;
+  }
+}
