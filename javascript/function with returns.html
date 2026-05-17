@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      function getMaxSpeed() {
+        return 60;
+      }
+
+      document.write("The maximum speed is limit: " + getMaxSpeed() + " km/h");
+
+      function getSchoolAddress() {
+        return "123 Main St, Anytown, USA";
+      }
+
+      document.write(
+        "<p>The school address is: " + getSchoolAddress() + "</p>",
+      );
+
+      function getIncome() {
+        return 70000;
+      }
+      function getExpenses() {
+        return 30000;
+      }
+      //   let income = getIncome();
+      //   let expenses = getExpenses();
+      //   let savings = income - expenses;
+      //   document.write("<p>Savings: $" + savings + "</p>");
+
+      function getSavings() {
+        let income = getIncome();
+        let expenses = getExpenses();
+        let savings = income - expenses;
+        document.write("<p>Savings: $" + savings + "</p>");
+      }
+
+      getSavings();
+    </script>
+  </body>
+</html>

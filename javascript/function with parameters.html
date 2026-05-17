@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      //function with parameters(variables that are passed to the function when it is called)
+      function hello(name) {
+        document.writeln("<p>Hello, " + name + "!</p>");
+      }
+
+      //call the function with different arguments (values for the parameters)
+      hello("John");
+      hello("Alice");
+
+      function add(a, b) {
+        document.writeln("<p>" + a + " + " + b + " = " + (a + b) + "</p>");
+      }
+
+      add(5, 2);
+      add(5, 10);
+
+      function getStudentInfo(name, age, address) {
+        document.writeln(
+          "<p>Student Name: " +
+            name +
+            ", Age: " +
+            age +
+            ", Address: " +
+            address +
+            "</p>",
+        );
+      }
+
+      getStudentInfo("John", 20, "123 Main St");
+      getStudentInfo("Alice", 22, "456 Oak Ave");
+    </script>
+  </body>
+</html>
